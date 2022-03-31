@@ -19,7 +19,7 @@ foreach ($results as $c) {
 		<div></div>
 	</div>
 
-	<?php echo ($pageSubTitle ?? 'Ambilis Mobile Platform'); ?>
+	<?php echo ($pageSubTitle ?? 'Mobile Business Platform'); ?>
 	
 	<div class="dropmenu">
 		<ul class="m-0 p-0">
