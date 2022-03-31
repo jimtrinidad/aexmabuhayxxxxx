@@ -26,12 +26,8 @@ date_default_timezone_set('Asia/Manila');
 |
 */
 
-if (SUBDOMAIN == 'localhost') {
-	$config['base_url'] = 'http://localhost/Projects/Aexponents/maybuhay/public/admin/';
-} else {
-	// $config['base_url'] = 'https://maybuhay.com/admin/';
-	$config['base_url'] = 'http://18.139.58.220/admin/';
-}
+// $config['base_url'] = 'https://maybuhay.com/admin/';
+$config['base_url'] = 'http://18.139.58.220/admin/';
 
 /*
 |--------------------------------------------------------------------------
