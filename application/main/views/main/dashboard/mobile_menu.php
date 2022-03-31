@@ -88,7 +88,7 @@
 								<div class="category-img">
 									<img src="'. public_url('assets/uploads/') . upload_filename($c['Image']) .'" width="100%"/>
 								</div>
-								<div class="bg-red ' . ($k % 2 == 0 ? 'bg-red text-white' : 'bg-gray text-black') . ' p-2 ">
+								<div class="bg-green ' . ($k % 2 == 0 ? 'bg-green text-white' : 'bg-gray text-black') . ' p-2 ">
 									<h3>'. $c['Name'] .'</h3>
 								</div>
 							</a>

@@ -78,9 +78,9 @@ foreach ($results as $c) {
 	</div>
 
 	<div class="menu_cart_button">
-		<a href="<?php echo site_url('marketplace/' . ($this->cart->total_items() > 0 ? 'cart' : '')) ?>" class="btn btn-sm bg-red text-white rounded" type="button"><span class="badge badge-warning cart_items_count"><?php echo $this->cart->total_items() ? $this->cart->total_items() : ''; ?></span><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+		<a href="<?php echo site_url('marketplace/' . ($this->cart->total_items() > 0 ? 'cart' : '')) ?>" class="btn btn-sm bg-green text-white rounded" type="button"><span class="badge badge-warning cart_items_count"><?php echo $this->cart->total_items() ? $this->cart->total_items() : ''; ?></span><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
-		<a href="<?php echo site_url() ?>" class="btn btn-sm bg-red text-white rounded" type="button">
+		<a href="<?php echo site_url() ?>" class="btn btn-sm bg-green text-white rounded" type="button">
 			<i class="fa fa-home" aria-hidden="true"></i>
 		</a>
 

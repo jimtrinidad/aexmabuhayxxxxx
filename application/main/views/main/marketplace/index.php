@@ -16,7 +16,7 @@
             <div class="input-group-append" id="button-addon4">
             <button type="submit" class="btn bg-d-purple text-white" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
-            <a href="<?php echo site_url('marketplace/cart') ?>" class="ml-1 btn bg-red text-white" type="button"><span class="badge badge-warning cart_items_count"><?php echo $this->cart->total_items() ? $this->cart->total_items() : '' ?></span><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="<?php echo site_url('marketplace/cart') ?>" class="ml-1 btn bg-green text-white" type="button"><span class="badge badge-warning cart_items_count"><?php echo $this->cart->total_items() ? $this->cart->total_items() : '' ?></span><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
           </div>
       <?php } ?>
       </div>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-5 text-right mt-2">
                   <?php if (!isGuest()) { ?>
-                  <a href="javascript:;" class="pr-button bg-red text-white mb-2" onclick="Marketplace.addToCart('<?php echo $item['Code'] ?>')"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                  <a href="javascript:;" class="pr-button bg-green text-white mb-2" onclick="Marketplace.addToCart('<?php echo $item['Code'] ?>')"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                   <?php } ?>
                   <a href="tel:<?php echo $item['seller']['Contact']; ?>"  class="pr-button bg-yellow text-black mb-2"><i class="fa fa-phone" aria-hidden="true"></i></a>
                 </div>
