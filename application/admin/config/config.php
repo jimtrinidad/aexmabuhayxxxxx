@@ -25,7 +25,13 @@ date_default_timezone_set('Asia/Manila');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/Projects/Aexponents/ambilis/public/admin/';
+
+if (SUBDOMAIN == 'localhost') {
+	$config['base_url'] = 'http://localhost/Projects/Aexponents/maybuhay/public/admin/';
+} else {
+	// $config['base_url'] = 'https://maybuhay.com/admin/';
+	$config['base_url'] = 'http://18.139.58.220/admin/';
+}
 
 /*
 |--------------------------------------------------------------------------

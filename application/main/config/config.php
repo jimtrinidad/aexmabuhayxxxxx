@@ -26,11 +26,12 @@ date_default_timezone_set('Asia/Manila');
 |
 */
 if (SUBDOMAIN == 'localhost') {
-	$config['base_url'] = 'http://localhost/Projects/Aexponents/ambilis/public/';
+	$config['base_url'] = 'http://localhost/Projects/Aexponents/maybuhay/public/';
 } else if (SUBDOMAIN !== false) {
-	$config['base_url'] = 'https://'. SUBDOMAIN .'.ambilis.com/';
+	$config['base_url'] = 'https://'. SUBDOMAIN .'.maybuhay.com/';
 } else {
-	$config['base_url'] = 'https://ambilis.com/';
+	// $config['base_url'] = 'https://maybuhay.com/';
+	$config['base_url'] = 'http://18.139.58.220/';
 }
 
 /*
