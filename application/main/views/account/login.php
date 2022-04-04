@@ -28,9 +28,9 @@
 		
 		<div class="content container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 offset-md-3">
 					<div class="px-1">
-						<div class="row">
+						<div class="row hide">
 							<div class="col-6">
 								<a href="<?php echo site_url('account/signup') ?>" class="btn btn-block bg-cream btn-auth"><img src="<?php echo public_url(); ?>resources/images/icons/fb-icon.png" width="20" />  <span>Continue with Facebook</span></a>
 							</div>
@@ -40,7 +40,7 @@
 						</div>
 
 						<form id="loginForm" action="<?php echo site_url('account/login') ?>" autocomplete="off" >
-							<div class="row">
+							<div class="row hide">
 								<div class="col-12 text-center my-3">
 									<strong class="text-b-red">OR</strong>
 								</div>
@@ -67,7 +67,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 hide">
 					<div class="px-1">
 						<b style="color: #4981c5">Yes it's Free! This is How it Works.</b>
 						<div class="embed-responsive embed-responsive-16by9">
