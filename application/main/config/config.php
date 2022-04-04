@@ -30,8 +30,8 @@ if (SUBDOMAIN == 'localhost') {
 } else if (SUBDOMAIN !== false) {
 	$config['base_url'] = 'https://'. SUBDOMAIN .'.maybuhay.com/';
 } else {
-	// $config['base_url'] = 'https://maybuhay.com/';
-	$config['base_url'] = 'http://18.139.58.220/';
+	$config['base_url'] = 'https://maybuhay.com/';
+	// $config['base_url'] = 'http://18.139.58.220/';
 }
 
 /*
