@@ -283,15 +283,15 @@ function profit_distribution($srp, $commision, $type, $distribution_only = false
 
     $profit_dist        = array(
         'profit'         => $profit,
-        'company'        => $profit * 0.30,
-        'investor'       => $profit * 0.10,
-        'referral'       => $profit * 0.25,
-        'delivery'       => $profit * 0.25,
+        'company'        => $profit * 0.43, // remaining
+        'investor'       => $profit * 0,
+        'delivery'       => $profit * 0,
+        'referral'       => $profit * 0.46,
         'cashback'       => $profit * 0.02,
-        'shared_rewards' => $profit * 0.08,
+        'shared_rewards' => $profit * 0.09,
     );
 
-    $profit_dist['divided_reward'] = ($profit_dist['shared_rewards'] > 0 ? ($profit_dist['shared_rewards'] / 8) : 0);
+    $profit_dist['divided_reward'] = ($profit_dist['shared_rewards'] > 0 ? ($profit_dist['shared_rewards'] / 3) : 0);
 
     if ($distribution_only) {
         return $profit_dist;
@@ -334,14 +334,14 @@ function ec_profit_distribution($profit)
 {
     $profit_dist        = array(
         'profit'         => $profit,
-        'company'        => $profit * 0.25,
-        'investor'       => $profit * 0.25,
-        'referral'       => $profit * 0.40,
+        'company'        => $profit * 0.43, // remaining
+        'investor'       => $profit * 0,
+        'referral'       => $profit * 0.46,
         'cashback'       => $profit * 0.02,
-        'shared_rewards' => $profit * 0.08,
+        'shared_rewards' => $profit * 0.09,
     );
 
-    $profit_dist['divided_reward'] = ($profit_dist['shared_rewards'] > 0 ? ($profit_dist['shared_rewards'] / 8) : 0);
+    $profit_dist['divided_reward'] = ($profit_dist['shared_rewards'] > 0 ? ($profit_dist['shared_rewards'] / 3) : 0);
 
     return $profit_dist;
 }
