@@ -451,7 +451,7 @@ function get_transactions($userID, $limit = 50)
 /**
 * get downline
 */
-function get_user_connections($userID, $level = 0, $max_level = 8)
+function get_user_connections($userID, $level = 0, $max_level = 3)
 {
 	$ci =& get_instance();
 	$connections = array();
