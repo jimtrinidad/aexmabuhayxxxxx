@@ -50,7 +50,7 @@
                 <div class="col-7">
                   <p class="sub-details">
                     <?php 
-                      echo '<span class="d-block">' . peso($distribution['referral'], false) . ' Referrer Points </span>' . 
+                      echo '<span class="d-block">' . peso($distribution['referral'], false) . ' Points </span>' . 
                            '<span class="d-block">' . peso($distribution['shared_rewards'], false) . ' Shared </span>' . 
                            '<span class="d-block">' . peso($distribution['cashback'], false) . ' Cashback</span>';
                     ?>

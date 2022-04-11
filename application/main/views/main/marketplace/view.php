@@ -45,7 +45,7 @@
 			<div class="col product-desc">
 				<h6>Rewards</h6>
 				<?php 
-          echo '<p>' . peso($distribution['referral'], false) . ' Referrer Points </p>' . 
+          echo '<p>' . peso($distribution['referral'], false) . ' Points </p>' . 
                '<p>' . peso($distribution['shared_rewards'], false) . ' Shared </p>' . 
                '<p>' . peso($distribution['cashback'], false) . ' Cashback</p>';
         ?>

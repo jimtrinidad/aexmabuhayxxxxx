@@ -31,7 +31,7 @@
 					<?php echo peso($i['price']); ?>
 					<div class="small">
 					<?php 
-	          echo $i['distribution']['referral'] > 0 ? '<span class="d-block">' . peso($i['distribution']['referral'], false) . ' Referrer Points </span>' : ''; 
+	          echo $i['distribution']['referral'] > 0 ? '<span class="d-block">' . peso($i['distribution']['referral'], false) . ' Points </span>' : ''; 
 	          echo $i['distribution']['shared_rewards'] > 0 ? '<span class="d-block">' . peso($i['distribution']['shared_rewards'], false) . ' Shared </span>' : ''; 
 	          echo $i['distribution']['cashback'] > 0 ? '<span class="d-block">' . peso($i['distribution']['cashback'], false) . ' Cashback</span>' : '';
 	        ?>	
@@ -69,7 +69,7 @@
 		    <?php
 		    	if ($points > 0) {
 		    		echo '<div class="row gutter-5">
-					    		<div class="col-7">Referrer Points</div>
+					    		<div class="col-7">Points</div>
 					    		<div class="col-5 text-right">' . peso($points, false) . '</div>
 					    	</div>';
 		    	}
