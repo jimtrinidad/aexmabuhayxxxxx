@@ -502,7 +502,7 @@ function straight_connections($connection_layer)
 /**
 * get upline referrer
 */
-function get_upper_referrers($userID, $levels = 8)
+function get_upper_referrers($userID, $levels = 3)
 {
 
 	$ci =& get_instance();
